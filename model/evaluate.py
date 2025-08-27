@@ -16,7 +16,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 )
 
 # Load the saved model
-model= loblib.load('model/iris_model.pkl')
+model= joblib.load('model/iris_model.pkl')
 
 # Make predictions
 y_pred = model.predict(X_test)
